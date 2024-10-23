@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate-Papo UOL (Réplica)</title>
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CDN Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header com imagens -->
+        <div class="chat-header">
+            <img src="img/logo 1.png" alt="UOL Bate-Papo">
+            <img src="img/people 1.png" alt="UOL People" id="openSidebarBtn">
+        </div>
+
+        <!-- Exibir mensagens -->
+        <div id="messages" class="messages"></div>
+
+        <!-- Barra lateral para selecionar destinatário e visibilidade -->
+        <div id="sidebar" class="sidebar">
+            <button id="closeSidebarBtn"></button>
+            <h3>Escolha um contato para enviar mensagem:</h3>
+            <ul id="participants-list">
+                <li data-to="Todos"><img src="img/people 2.png" alt="Todos"> Todos</li>
+                <!-- Participantes serão carregados dinamicamente -->
+            </ul>
+            <h3>Escolha a visibilidade:</h3>
+            <ul>
+                <li data-visibility="public"><img src="img/lock-open 1.png" alt="Público"> Público</li>
+                <li data-visibility="private"><img src="img/lock-closed 1.png" alt="Reservadamente"> Reservadamente</li>
+            </ul>
+        </div>
+
+        <!-- Entrada de mensagem, botão de envio e texto dinâmico -->
+        <div class="message-input-container">
+            <div class="input-wrapper">
+                <input type="text" id="message-input" placeholder="Escreva aqui ...">
+                <button id="send-btn"><img src="img/Vector.png" alt="Enviar"></button>
+            </div>
+            <!-- Texto dinâmico de destinatário e visibilidade -->
+            <div id="send-info" class="send-info">
+                Enviando para Todos (público)
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
