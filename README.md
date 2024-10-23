@@ -18,7 +18,7 @@ Este projeto faz parte do módulo 06 do curso de Fullstack da Driven, intitulado
 ## Como Executar o Projeto
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/bate-papo-uol.git
+    git clone https://github.com/arijunior2020/bate-papo-uol-replica.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
